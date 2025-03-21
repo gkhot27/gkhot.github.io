@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- font awesome  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- style  -->
+     <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+
+    <!-- Nav -->
+    <nav id="navbar" data-aos="fade-down">
+        <div class="container">
+            <div class="nav">
+                <div id="logo"><a href="#"><h2>Logo</h2></a></div>
+                <div id="menu">
+                    <a href="#" onclick="closeNav()">Home</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                    <a href="#skills" onclick="closeNav()">Skills</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                    <a href="#" onclick="closeNav()" class="download-resume-btn" target="_blank">Download Resume</a>
+                </div>
+                <div id="menuToggle" class="navbar-toggler" onclick="toggleMenu()">☰</div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- hero  -->
+     <section class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-left">
+                   <div class="hero-title">
+                        <h1>Hi, I'm Alex Carter</h1>
+                        <h4>Software Engineer</h4>
+                   </div>
+                    <p>Hi, I'm Alex Carter, a passionate software engineer who loves crafting elegant code and building innovative solutions. With a knack for problem-solving and a drive for continuous learning, I strive to make technology more accessible and impactful for everyone.</p>
+                    <div class="hero-btn-wrap">
+                        <div class="hire-me-btn btn-1">
+                            <a href="#contact">Hire Me</a>
+                        </div>
+                        <div class="know-more-btn btn-2">
+                            <a href="#about">Know More</a>
+                        </div>
+                    </div>
+                    <div class="social-icon-wrapper">
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-img img-cd" data-aos="fade-left">
+                        <img src="./assets/img/hero-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- about  -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="section-title" data-aos="fade-right">
+                        <h2>Discover My <span>Story</span></h2>
+                    </div>
+                    <p data-aos="fade-right">Hello! I'm Alex Carter, a dedicated software engineer with a passion for creating innovative and efficient solutions. With a background in Python and C++, I've spent 05 years honing my skills and tackling exciting challenges.</p> 
+                    <p data-aos="fade-right">My journey in technology is driven by a commitment to continuous learning and a love for problem-solving. When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, or sharing insights on the latest developments in the field. My goal is to leverage technology to make a positive impact and help others achieve their digital aspirations.</p>
+                    <div class="btn-2 hire-me-btn" data-aos="fade-left">
+                        <a href="#contact">Contact Me</a>
+                    </div>
+                </div>
+                <div class="about-right" style="display: none;">
+                    <div class="about-card">
+                        <div class="about-img img-cd">
+                            <img src="./assets/img/about-1.png" alt="">
+                        </div>
+                        <h5>Backend <br>Developer</h5>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-img img-cd">
+                            <img src="./assets/img/about-2.png" alt="">
+                        </div>
+                        <h5>AI Developer & <br>Researcher</h5>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-img img-cd">
+                            <img src="./assets/img/about-3.png" alt="">
+                        </div>
+                        <h5>Full Stack <br>Engineer</h5>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-img img-cd">
+                            <img src="./assets/img/about-4.png" alt="">
+                        </div>
+                        <h5>Independent <br>Technical Builder</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- timeline  -->
+     <section class="timeline-section">
+        <div class="container">
+            <div class="timeline">
+                <ul>
+                <li>
+                    <div>
+                    <time>2015</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2016</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2017</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2018</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2019</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2020</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2021</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>2022</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- portfolio  -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="portfolio-top-wrapper">
+                <div class="portfolio-left" data-aos="fade-right">
+                    <div class="section-title">
+                        <h2>Discover My <br> <span>Creations</span></h2>
+                    </div>
+                </div>
+                <div class="portfolio-right" data-aos="fade-left">
+                    <p>Welcome to my portfolio. Here, you'll find examples of my work in software engineering, from innovative web solutions to complex software systems. Each project reflects my dedication to crafting efficient, scalable applications tailored to meet diverse client needs. Explore below to see how I turn ideas into impactful solutions.</p>
+                </div>
+            </div>
+            <p></p>
+            <div class="cards" data-aos="fade-up">
+                <div class="card" active>
+                    <img src="./assets/img/portfolio-1.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project One</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/portfolio-2.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project Two</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/portfolio-3.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project Three</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/portfolio-4.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project Four</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/portfolio-5.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project Five</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/portfolio-6.avif" alt="" class="card__image">
+                    <div class="card__infos">
+                        <h3 class="card__name">Project Six</h3>
+                        <a href="#" class="card__author">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- video section  -->
+    <section class="video-section">
+        <video width="100%" height="100%" autoplay controls data-aos="zoom-out">
+            <source src="./assets/img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+
+    <!-- skills  -->
+     <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-title" data-aos="fade-right">
+                <h2>Skills & <span>Competencies</span></h2>
+            </div>
+            <div class="skill-wrapper">
+                <div class="skill-left">
+                    <div class="skill-img img-cd" data-aos="fade-right">
+                        <img src="./assets/img/timeline-img.jpg" alt="">
+                    </div>
+                    <p data-aos="fade-right">As a software engineer, I’ve honed technical skills crucial for creating innovative solutions. I am proficient in JavaScript, Python, and SQL, with extensive experience in React, Node.js, and Java. My strengths include problem-solving, system design, and maintaining high code quality, enabling me to deliver scalable software solutions.</p>
+                </div>
+                <div class="skill-right">
+                    <div class="my-skills" id="skills">
+                        <div class="container">
+                            <div class="progress fl-left" data-aos="fade-right">
+                                <div class="technique">
+                                    <h3>Python</h3>
+                                    <div class="bar">
+                                        <span class="python">95% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>C++</h3>
+                                    <div class="bar">
+                                        <span class="cplus">95% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>Java</h3>
+                                    <div class="bar">
+                                        <span class="java">75% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>SQL</h3>
+                                    <div class="bar">
+                                        <span class="sql">60% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>React</h3>
+                                    <div class="bar">
+                                        <span class="react">85% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>Java Script</h3>
+                                    <div class="bar">
+                                        <span class="js">80% &nbsp;</span>
+                                    </div>
+                                </div>
+                                <div class="technique">
+                                    <h3>Node.js</h3>
+                                    <div class="bar">
+                                        <span class="node">90% &nbsp;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+     <!-- contact  -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-right">
+                <h2>Let’s Connect & <span>Create</span></h2>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-left" data-aos="fade-right">
+                    <h3>Reach Me</h3>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <a href="tel:-1234567890">+1234 567 890</a>
+                    </div>
+                    <div class="contact-line">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <a href="mailto:info@gmail.com">info@gmail.com</a>
+                    </div>
+                    <div class="contact-line last">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <p>No 05, Main street, City Name</p>
+                    </div>
+                    <h3>Follow Me</h3>
+                    <div class="social-icon-wrapper">
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
+                        <span><a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    </div>
+                </div>
+                <div class="contact-right" data-aos="fade-left">
+                    <h3>Send Me A Message</h3>
+                    <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your subject">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <textarea id="message" rows="4" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>  
+                        </div>
+              
+                        <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div>   
+              
+                      </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer  -->
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p>Copyright © 2024 Portfolio All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+     </footer>
+    
+
+
+    <!-- gsap  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <!-- aos  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- contact form  -->
+    <script src="./assets/js/jquery-min.js"></script>
+    <script src="./assets/js/form-validator.min.js"></script>
+    <script src="./assets/js/contact-form-script.js"></script>
+
+    <!-- script  -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
